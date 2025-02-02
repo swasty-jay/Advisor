@@ -23,12 +23,6 @@ function HomePage() {
 
           {/* Buttons */}
           <div className="mt-6 flex space-x-4">
-            {/* <Link to={"/about"}>
-              <Button className="bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-green-600">
-                READ MORE
-              </Button>
-            </Link> */}
-
             <Link to={"/contact"}>
               <Button className="text-black">CONTACT US</Button>
             </Link>

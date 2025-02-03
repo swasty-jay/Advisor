@@ -3,6 +3,7 @@ import {
   LazyLoadImage,
 } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { Link } from "react-router-dom";
 
 function Info() {
   return (
@@ -21,9 +22,11 @@ function Info() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
               bibendum nec risus et suscipit Curabitur metus ipsum.
             </p>
-            <button className="mt-4 border-2 border-black text-black px-6 py-2 rounded-full font-semibold hover:bg-black hover:text-white transition">
-              READ MORE
-            </button>
+            <Link to={"/about"}>
+              <button className="mt-4 border-2 border-black text-black px-6 py-2 rounded-full font-semibold hover:bg-black hover:text-white transition">
+                READ MORE
+              </button>
+            </Link>
           </div>
 
           {/* Right Image Section with Lazy Loading */}

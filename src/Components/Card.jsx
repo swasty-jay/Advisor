@@ -30,8 +30,8 @@ function Card() {
             onClick={() => setActiveId(item.id)}
             className={`flex flex-col items-start p-4 sm:p-6 border border-gray-100 cursor-pointer transition ${
               activeId === item.id
-                ? "bg-green-500 hover:bg-green-600 text-white"
-                : "bg-white"
+                ? "bg-green-500  text-white"
+                : "bg-white hover:bg-green-500 hover:text-white"
             }`}
           >
             <div

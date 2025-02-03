@@ -11,19 +11,19 @@ function Card() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-0.5 px-10 py-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 px-4 sm:px-6 md:px-10 py-6">
       {data.map((item) => (
         <div
           key={item.id}
           onClick={() => setActiveId(item.id)}
-          className={`flex flex-col items-start p-6 border-1 border-gray-100 cursor-pointer transition ${
+          className={`flex flex-col items-start p-4 sm:p-6 border border-gray-100 cursor-pointer transition ${
             activeId === item.id
               ? "bg-green-500 hover:bg-green-600 text-white"
               : "bg-white"
           }`}
         >
           <div
-            className={`w-10 h-10 flex items-center justify-center rounded-full font-bold ${
+            className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full font-bold ${
               activeId === item.id
                 ? "bg-white text-green-500"
                 : "bg-green-500 text-white"
@@ -31,7 +31,9 @@ function Card() {
           >
             {item.id}
           </div>
-          <h3 className="mt-3 text-lg font-semibold">{item.title}</h3>
+          <h3 className="mt-2 sm:mt-3 text-base sm:text-lg font-semibold">
+            {item.title}
+          </h3>
           <p className="text-sm">{item.desc}</p>
         </div>
       ))}

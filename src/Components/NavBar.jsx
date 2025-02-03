@@ -28,7 +28,7 @@ function Navbar() {
               SERVICES
             </Link>
             <Link to="/contact" className="text-xl hover:text-emerald-500">
-              CONTACT
+              CONTACT US
             </Link>
             <div className="flex">
               <hr className="border-1 border-slate-500 h-8 justify-center " />
@@ -58,7 +58,7 @@ function Navbar() {
             SERVICES
           </Link>
           <Link to="/contact" className="block px-4 py-2 hover:bg-emerald-500">
-            CONTACT
+            CONTACT US
           </Link>
         </div>
       )}

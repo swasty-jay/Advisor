@@ -5,8 +5,10 @@ import Button from "./Button";
 import Card from "./Card";
 import Info from "../Pages/Info";
 import Carousel from "./Carousel";
+import UserComponent from "./UserComponent";
 
 function HomePage() {
+  const userId = "user-id-from-auth"; // Get user id from auth
   return (
     <>
       <LazyLoadComponent>
@@ -46,6 +48,7 @@ function HomePage() {
       <Card />
       <Info />
       <Carousel />
+      <UserComponent userId={userId} />
     </>
   );
 }

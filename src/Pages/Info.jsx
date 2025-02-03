@@ -32,7 +32,7 @@ function Info() {
           {/* Right Image Section with Lazy Loading */}
           <div className="relative md:w-1/2 mt-6 md:mt-0 ml-2 md:ml-12">
             <LazyLoadImage
-              src="/src/assets/bg.jpg"
+              src="/src/assets/carousel-img.jpg"
               alt="Advisor"
               effect="blur"
               className="rounded-lg shadow-lg"

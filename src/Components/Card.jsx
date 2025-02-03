@@ -60,7 +60,7 @@ function Card() {
             className={`px-4 py-2 rounded-full font-semibold transition-colors ${
               currentPage === index + 1
                 ? "bg-green-500 text-white"
-                : "bg-white text-green-500 border border-green-500"
+                : "bg-white text-green-500 border border-green-500 hover:bg-green-500 hover:text-white"
             }`}
           >
             {index + 1}

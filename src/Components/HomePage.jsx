@@ -26,7 +26,7 @@ function HomePage() {
           <div className="relative z-10 max-w-2xl text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-semibold text-white">
               Money Doesn’t Come
-              <span className="text-green-500">Without Care</span>
+              <span className="text-green-500 pl-2">Without Care</span>
             </h1>
             <p className="text-lg text-gray-200 mt-4">
               Finding your next Financial Advisor is as easy as counting from

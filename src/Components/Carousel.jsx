@@ -106,7 +106,7 @@ function Carousel() {
             key={index}
             onClick={() => handleDotClick(index)}
             className={`w-3 h-3 rounded-full ${
-              activeIndex === index ? "bg-blue-500" : "bg-gray-300"
+              activeIndex === index ? "bg-green-500" : "bg-gray-300"
             }`}
           />
         ))}
